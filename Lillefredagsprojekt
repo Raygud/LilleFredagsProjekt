@@ -1,0 +1,75 @@
+using System;
+
+namespace erdefredag
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+            {
+                Console.WriteLine("Vil du vide om de er Fredag i dag? \n Ja/Nej");
+                string JaNej = Console.ReadLine();
+                if (JaNej == "Ja")
+                {
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+                    {
+                        Console.WriteLine("Ja de er de!");
+                        Console.ReadLine();
+                    }
+
+                    if (DateTime.Now.DayOfWeek != DayOfWeek.Friday)
+                    {
+                        Console.WriteLine("Nej Desværre :(");
+                        
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+                    {
+                        Console.WriteLine("Der er fredag om 4 dage...");
+                        Console.ReadLine();
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+                    {
+                        Console.WriteLine("Der er fredag om 3 dage...");
+                        Console.ReadLine();
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Wednesday)
+                    {
+                        Console.WriteLine("Der er fredag om 2 dage...");
+                        Console.ReadLine();
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Thursday)
+                    {
+                        Console.WriteLine("Der er fredag i morgen!");
+                        Console.ReadLine();
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday)
+                    {
+                        Console.WriteLine("Der er fredag om 6 dage MEN de er stagidvek weekend!");
+                        Console.ReadLine();
+                    }
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
+                    {
+                        Console.WriteLine("Der er fredag om 5 dage MEN de er stagidvek weekend!");
+                        Console.ReadLine();
+                    }
+
+                }
+
+                if (JaNej == "Nej")
+                {
+                    if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+                    {
+                        Console.WriteLine("Ok du er godt nokk træls");
+                        Console.ReadLine();
+                    }
+                    
+
+
+
+                }
+
+            }
+        }
+    }
+}
