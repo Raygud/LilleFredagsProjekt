@@ -45,12 +45,12 @@ namespace erdefredag
                     }
                     if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday)
                     {
-                        Console.WriteLine("Der er fredag om 6 dage MEN de er stagidvek weekend!");
+                        Console.WriteLine("Der er fredag om 6 dage MEN de er stagidvæk weekend!");
                         Console.ReadLine();
                     }
                     if (DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
                     {
-                        Console.WriteLine("Der er fredag om 5 dage MEN de er stagidvek weekend!");
+                        Console.WriteLine("Der er fredag om 5 dage MEN de er stagidvæk weekend!");
                         Console.ReadLine();
                     }
 
